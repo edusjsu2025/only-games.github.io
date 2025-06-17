@@ -158,66 +158,28 @@
 </head>
 
 <body onload="setTimeout(function(){window.scrollTo(0,1)},1);">
+	<!--body-->
 	<!-- Navbar -->
-    <div id="navbar-placeholder"></div>
-    <script>
-      fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-          function updateClock() {
-            const now = new Date();
-            const clock = document.getElementById('clock');
-            if (clock) clock.textContent = now.toLocaleTimeString();
-          }
-          setInterval(updateClock, 1000);
-          updateClock();
-        });
-    </script>
-	
-         
-  <div class="unblocked-text">
-    <h1 class="text-center">All Unblocked Games</h1>
-    <p class="text-center text-styling">Here we provide all list of <a href="https://only-games.github.io/" style="color: #a83234">unblocked games</a> or unblocked games premium that you can play in the restricted areas like school, college or at your workplace. Most of the games are popular in students because they like to play them in their idle time. 
-        We have added all of your favourite games like 1v1.lol unblocked, eggy car, 2048 and github all games. If we miss some of your favourite game, you can put it in the suggestion box in the top right
-   A red game tile means that it is within the top 5 most popular games this week</p>
-
-  </div>
-
-	    <div class="banner-ad-content" style="padding: 20px; text-align: center;">
-<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-
-<!-- Ad container -->
-<div id="970x250-1" style="width:970px; height:250px;">
+  <div id="navbar-placeholder"></div>
   <script>
-    window.googletag = window.googletag || { cmd: [] };
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
 
-    googletag.cmd.push(function () {
-      googletag.defineSlot('/21849154601,23300816471/Ad.Plus-970x250', [970, 250], '970x250-1')
-        .addService(googletag.pubads());
+        function updateClock() {
+          const now = new Date();
+          const timeString = now.toLocaleTimeString();
+          const clock = document.getElementById('clock');
+          if (clock) {
+            clock.textContent = timeString;
+          }
+        }
 
-      googletag.enableServices();
-      googletag.display('970x250-1');
-    });
+        setInterval(updateClock, 1000);
+        updateClock();
+      });
   </script>
-</div>
-	 
-	  
-  <div class="sortbar">
-    <div class="topnav">
-	<a class="active">Sort by:</a>
-	<a href="#all">All</a>
-	<a href="#fnaf">FNAF</a>
-    <a href="#moto-x3m">Moto X3M</a>
-    <a href="#snail-bob">Snail Bob</a>
-	<a href="#vex">Vex</a>
-  </div>
-  </div>
-   <script src="JS/hide.js"></script>
-  <script src="JS/clock.js"></script>
-  <script src="JS/search.js"></script>
-  <script src="JS/size.js"></script>
-  <nav>
 
 
 	<div id="ajaxbar">
