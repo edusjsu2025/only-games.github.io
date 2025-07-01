@@ -19,39 +19,7 @@
     <link rel="icon" type="image/x-icon" href="bloonstd2.png" />
     <link rel="shortcut icon" type="image/x-icon" href="bloonstd2.png" />
 
-    <!-- Ad.Plus GPT script for sticky ads -->
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <script>
-      window.googletag = window.googletag || { cmd: [] };
-
-      var anchorSlot, leftSideSlot, rightSideSlot;
-
-      googletag.cmd.push(function () {
-        // Bottom sticky banner
-        anchorSlot = googletag.defineOutOfPageSlot('/21849154601,23300816471/Ad.Plus-Anchor', googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR);
-        if(anchorSlot) anchorSlot.addService(googletag.pubads());
-
-        // Left sticky side rail
-        leftSideSlot = googletag.defineOutOfPageSlot('/21849154601,23300816471/Ad.Plus-Side-Anchor', googletag.enums.OutOfPageFormat.LEFT_SIDE_RAIL);
-        if(leftSideSlot) leftSideSlot.addService(googletag.pubads());
-
-        // Right sticky side rail
-        rightSideSlot = googletag.defineOutOfPageSlot('/21849154601,23300816471/Ad.Plus-Side-Anchor', googletag.enums.OutOfPageFormat.RIGHT_SIDE_RAIL);
-        if(rightSideSlot) rightSideSlot.addService(googletag.pubads());
-
-        googletag.pubads().enableSingleRequest();
-        googletag.enableServices();
-
-        googletag.display(anchorSlot);
-        googletag.display(leftSideSlot);
-        googletag.display(rightSideSlot);
-      });
-
-      // Refresh ads every 30 seconds (optional)
-      setInterval(function () {
-        googletag.pubads().refresh([anchorSlot, leftSideSlot, rightSideSlot]);
-      }, 30000);
-    </script>
+  
 
     <style>
       /* Make sure body and html take full height */
