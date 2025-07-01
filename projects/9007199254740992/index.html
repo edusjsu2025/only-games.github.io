@@ -55,48 +55,6 @@
     googletag.display('728x90-1');
   });
 </script>
-	<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-
-<script>
-  window.googletag = window.googletag || { cmd: [] };
-  var LeftSideRailSlot, RightSideRailSlot;
-
-  googletag.cmd.push(function () {
-    // Define Left Side Rail Ad Slot
-    LeftSideRailSlot = googletag.defineOutOfPageSlot(
-      '/21849154601,23300816471/Ad.Plus-Side-Anchor',
-      googletag.enums.OutOfPageFormat.LEFT_SIDE_RAIL
-    );
-    if (LeftSideRailSlot) {
-      LeftSideRailSlot.addService(googletag.pubads());
-      googletag.display(LeftSideRailSlot);
-    }
-
-    // Define Right Side Rail Ad Slot
-    RightSideRailSlot = googletag.defineOutOfPageSlot(
-      '/21849154601,23300816471/Ad.Plus-Side-Anchor',
-      googletag.enums.OutOfPageFormat.RIGHT_SIDE_RAIL
-    );
-    if (RightSideRailSlot) {
-      RightSideRailSlot.addService(googletag.pubads());
-      googletag.display(RightSideRailSlot);
-    }
-
-    // Enable services and single request mode
-    googletag.pubads().enableSingleRequest();
-    googletag.enableServices();
-  });
-
-  // Auto-refresh ads every 30 seconds
-  setInterval(function () {
-    const refreshSlots = [];
-    if (LeftSideRailSlot) refreshSlots.push(LeftSideRailSlot);
-    if (RightSideRailSlot) refreshSlots.push(RightSideRailSlot);
-    if (refreshSlots.length > 0) {
-      googletag.pubads().refresh(refreshSlots);
-    }
-  }, 30000);
-</script>
 <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 
 <script>
@@ -120,48 +78,6 @@
       googletag.display(interstitialSlot);
     }
   });
-</script>
-	<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-
-<script>
-  window.googletag = window.googletag || { cmd: [] };
-  var LeftSideRailSlot, RightSideRailSlot;
-
-  googletag.cmd.push(function () {
-    // Define Left Side Rail Ad Slot
-    LeftSideRailSlot = googletag.defineOutOfPageSlot(
-      '/21849154601,23300816471/Ad.Plus-Side-Anchor',
-      googletag.enums.OutOfPageFormat.LEFT_SIDE_RAIL
-    );
-    if (LeftSideRailSlot) {
-      LeftSideRailSlot.addService(googletag.pubads());
-      googletag.display(LeftSideRailSlot);
-    }
-
-    // Define Right Side Rail Ad Slot
-    RightSideRailSlot = googletag.defineOutOfPageSlot(
-      '/21849154601,23300816471/Ad.Plus-Side-Anchor',
-      googletag.enums.OutOfPageFormat.RIGHT_SIDE_RAIL
-    );
-    if (RightSideRailSlot) {
-      RightSideRailSlot.addService(googletag.pubads());
-      googletag.display(RightSideRailSlot);
-    }
-
-    // Enable single request mode and initialize services
-    googletag.pubads().enableSingleRequest();
-    googletag.enableServices();
-  });
-
-  // Refresh the ad slots every 30 seconds
-  setInterval(function () {
-    const refreshSlots = [];
-    if (LeftSideRailSlot) refreshSlots.push(LeftSideRailSlot);
-    if (RightSideRailSlot) refreshSlots.push(RightSideRailSlot);
-    if (refreshSlots.length > 0) {
-      googletag.pubads().refresh(refreshSlots);
-    }
-  }, 30000);
 </script>
 
 </head>
